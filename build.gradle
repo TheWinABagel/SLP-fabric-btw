@@ -40,7 +40,7 @@ repositories {
     // Fixed LWJGL on Linux
     maven {
         name = 'Babric'
-        url =untitled 'https://maven.glass-launcher.net/babric'
+        url = 'https://maven.glass-launcher.net/babric'
     }
     maven {
         url = "https://api.modrinth.com/maven"
