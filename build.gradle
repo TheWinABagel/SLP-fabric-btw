@@ -108,6 +108,8 @@ java {
 }
 
 jar {
+    from sourceSets.main.output.resourcesDir
+    from sourceSets.main.output.classesDirs
     from("LICENSE") {
         rename { "${it}_${project.archives_base_name}" }
     }
@@ -284,14 +286,6 @@ configurations.all {
             }
         }
         force "org.lwjgl.lwjgl:lwjgl-platform:${lwjglVersion}"
-    }
-}
-
-jar {
-    from sourceSets.main.output.resourcesDir
-    from sourceSets.main.output.classesDirs
-    from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
     }
 }
 

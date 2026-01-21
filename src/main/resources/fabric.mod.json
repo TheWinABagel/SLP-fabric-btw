@@ -6,7 +6,8 @@
   "version": "${version}",
 
   "authors": [
-    "Kotori316"
+    "Kotori316",
+    "TheWinABagel (Port)"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/scalable-cats-force",
