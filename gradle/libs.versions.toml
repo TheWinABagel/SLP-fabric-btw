@@ -21,6 +21,10 @@ slp_fabric = "3.+"
 scala3 = "3.7.3"
 scala2 = "2.13.17"
 cats = "2.13.0-kotori"
+zio = "2.1.24"
+quill = "4.8.6"
+config = "4.0.6"
+json = "0.8.0"
 
 plugin_fabric_loom = "1.13.6"
 plugin_publish_all = "1.+"
@@ -52,10 +56,15 @@ scala2 = { group = "org.scala-lang", name = "scala-library", version.ref = "scal
 cats_core = { group = "org.typelevel", name = "cats-core_3", version.ref = "cats" }
 cats_kernel = { group = "org.typelevel", name = "cats-kernel_3", version.ref = "cats" }
 cats_free = { group = "org.typelevel", name = "cats-free_3", version.ref = "cats" }
+zio_core = { group = "dev.zio", name = "zio_3", version.ref = "zio" }
+zio_quill = { group = "io.getquill" , name = "quill-jdbc_zio_3", version.ref = "quill" }
+zio_config = { group = "dev.zio", name = "zio-config_3", version.ref = "config" }
+zio_json = { group = "dev.zio", name = "zio-json_3", version.ref = "json" }
 
 [bundles]
 scala = ["scala2", "scala3"]
 cats = ["cats_core", "cats_kernel", "cats_free"]
+zio = [ "zio_core", "zio_quill", "zio_config", "zio_json"]
 
 [plugins]
 loom = { id = "fabric-loom", version.ref = "plugin_fabric_loom" }
